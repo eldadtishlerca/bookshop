@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #E4DFDA;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+h1 {
+    margin: 25px 0;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: 800;
+    font-size: 40px;
+}
+h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+select {
+    padding: 3px;
+    cursor: pointer;
+}
+
+select:active {
+    outline: 1px solid #4357AD;
+}
+select:focus {
+    outline: none;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th {
+    border: 1px #ccc solid;
+    background-color: #D4B483;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+td {
+    background-color: rgb(245, 245, 245);
+    border: 1px #ccc solid;
+    font-size: 16px;
+}
+
+td, th {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+th:last-child,
+td:last-child {
+    min-width: 75px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+input:first-child {
+    margin-top: 15px;
+}
+
+
+.add-btn {
+    margin-top: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+    background-color: #D4B483;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+    background-color: #937d5b;
+    color: black;
+}
+
+.modal2 {
+    margin: auto;
+    text-align: center;
+    display: none;
+    border: 1px black solid;
+    height: 400px;
+    width: 200px;
+}
+
+.open {
+    display: block;
+}
+
+.modal img {
+    margin: auto;
+    max-height: 180px;
+    
+}
+
+.action-btn {
+    padding: 10px 15px;
+    color: whitesmoke;
+    font-weight: 500;
+    border: transparent solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.action-btn:hover {
+    border: 1px solid #E4DFDA;
+}
+
+.read {
+    background-color: #4357AD;
+    margin-inline-end: 10px;
+}
+
+.read:hover {
+    background-color: #778df0;
+    color: black;
+}
+
+.update {
+    background-color: #48A9A6;
+    margin-inline-end: 10px;
+}
+
+.update:hover {
+    background-color: #61d8d5;
+    color: black;
+}
+
+.delete {
+    background-color: #C1666B;
+}
+
+.delete:hover {
+    background-color: #f18287;
+    color: black;
+}
+
+.btn-rate {
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 2px;
+    margin-inline-end: 5px;
+    margin-inline-start: 5px;
+}

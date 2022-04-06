@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body onload="onInit()">
+    <header>
+      <h1 data-trans="title">BookShop</h1>
+      <h4 data-trans="subtitle">Choose language</h4>
+      <select onchange="onSetLang(this.value)">
+        <option value="en">English</option>
+        <option value="he">עברית</option>
+        <option value="ja">Japanese</option>
+      </select>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th data-trans="title-id">Id</th>
+          <th data-trans="title-name">Name</th>
+          <th data-trans="title-price">Price</th>
+          <th data-trans="title-actions">Actions</th>
+          <th data-trans="title-rate">Rate</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-body-container"></tbody>
+    </table>
+
+    <button class="add-btn" onclick="onOpenModal()" data-trans="add-book">
+      Add book
+    </button>
+
+    <div class="modal2">
+      <button onclick="removeOpen()">X</button>
+      <h3></h3>
+      <h4></h4>
+      <p></p>
+      <div class="rate-container"></div>
+      <div class="img-container"></div>
+    </div>
+
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Book</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              onclick="onCloseModal()"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="booktitle"
+                  placeholder="Enter book title"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="booktitlehe"
+                  placeholder="Enter book title hebrew"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="booktitleja"
+                  placeholder="Enter book title japanese"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bookprice"
+                  placeholder="Enter book price $"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bookrate"
+                  placeholder="Enter book rate"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              onclick="onCloseModal()"
+            >
+              Close
+            </button>
+            <button type="button" onclick="onAddBook()" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/util-services.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/storage-services.js"></script>
+    <script src="js/book-services.js"></script>
+    <script src="js/book-controller.js"></script>
+  </body>
+</html>
