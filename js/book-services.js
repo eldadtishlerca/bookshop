@@ -81,6 +81,6 @@ function _createBook(name, price, rate) {
     name,
     price,
     imgUrl: ' ',
-    rate,
+    rate: rate,
   }
 }

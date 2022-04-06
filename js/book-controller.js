@@ -117,7 +117,7 @@ function onUpdateBook(bookId) {
 
 function onReadBook(bookId) {
   var book = getBookById(bookId)
-  var elModal = document.querySelector('.modal')
+  var elModal = document.querySelector('.readModal')
   elModal.querySelector('h3').innerText = book.name
   elModal.querySelector('h4').innerText = `${book.price}`
   elModal.querySelector('p').innerText = 'blalblabllablalbllalsdflaksdf'
